@@ -126,6 +126,16 @@ exact transaction as `non-BIP68-final` from tip `337146` to `337173` — about
 tip `337174` (see `docs/FINDINGS.md` 5, which also shows how to tell a node
 bookkeeping problem apart from a covenant bug by sweeping `nSequence`).
 
+If the retry loop exhausts itself, the transaction can be placed directly once
+the node catches up — it is the same bytes, so the txid does not change:
+
+```bash
+# the claim's raw transaction, from engine.buildInvitationTransactionFromMergedCommit
+RAW_TX_FILE=/tmp/claim.hex EXPECTED_TXID=bf9fa850… node --import tsx scripts/broadcast-raw.ts
+# chipnet.imaginary.cash tip 337174 ACCEPTED bf9fa850…
+# chipnet.bch.ninja      tip 337174 ACCEPTED bf9fa850…
+```
+
 ### Claiming from the beneficiary's own wallet (what works and what does not)
 
 ```bash

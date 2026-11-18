@@ -229,6 +229,8 @@ the template into a live engine (needs Chipnet).
 | `npm run reclaim` | Owner cancels at any age (`VAULT_NAME`, `OWNER_PAYOUT_SCRIPT`). |
 | `npm run update-beneficiary` | Owner moves the vault to a new beneficiary (`NEW_BENEFICIARY_SCRIPT`, `NEW_PERIOD_BLOCKS`, `NEW_LABEL`). |
 | `npm run reject-early-claim` | Negative test: script-level and network-level rejection of an early claim. |
+| `npm run broadcast-raw` | Resubmit an already-built transaction directly to the Electrum servers (`RAW_TX_FILE`, `EXPECTED_TXID`). |
+| `npm run verify-findings` | Reproduces the engine findings in one run (FINDINGS 6, 7, 8, 12, 14). |
 
 Environment: `XO_WALLET` (wallet file with a `mnemonic` field), `XO_DB_PATH`
 (engine database), `BROADCAST=1` to actually send, `RETRY_DELAY_SECONDS` /
@@ -293,6 +295,11 @@ scripts/
   reject-early-claim.ts  the two early-claim rejections
   verify-tx.ts           libauth VM pre-flight for every broadcast
   beneficiary-address.ts derives the beneficiary's P2PKH from a second wallet
+  broadcast-invitation.ts  join + execute an invitation from another wallet
+  broadcast-raw.ts        resubmit built bytes when a node is behind
+  verify-findings.ts      one-shot reproduction of the engine findings
+  list-utxos.ts           print the account's tracked UTXOs
+  scan-wallet.ts scan-balances.ts recover-change.ts  key-derivation recovery
   serialize-template.ts
   lib/                   config, engine, vault record, covenant compilation
 fixtures/

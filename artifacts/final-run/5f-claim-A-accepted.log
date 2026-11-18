@@ -1,0 +1,21 @@
+# How the claim transaction finally reached Chipnet
+#
+# The engine's broadcast path (via the Electrum servers' own node) rejected the
+# identical transaction as non-BIP68-final from tip 337146 to 337173 while the
+# covenant coin was confirmed at height 337144 (merkle proof verified against
+# the header at 337144). The same bytes were submitted directly to both servers
+# at tip 337174 and accepted. Captured output:
+#
+#  chipnet.imaginary.cash tip 337174 ACCEPTED bf9fa85020c9396405c75e781b481ab05eb8e2fe015a2ce604254a0d99899dc3
+#  chipnet.bch.ninja      tip 337174 ACCEPTED bf9fa85020c9396405c75e781b481ab05eb8e2fe015a2ce604254a0d99899dc3
+#
+# The inline script used for that submission is now in the repository as
+# scripts/broadcast-raw.ts. Re-submitting the same bytes after confirmation
+# (tip 337180) correctly reports:
+#
+#  chipnet.imaginary.cash tip 337180 REJECTED the transaction was rejected by network rules. transaction already in block chain
+#  chipnet.bch.ninja      tip 337180 REJECTED the transaction was rejected by network rules. transaction already in block chain
+#
+# The claim confirmed in block 337175: 1 input (p2sh, 58,500 sat) ->
+# 1 output (p2pkh, 57,000 sat to bchtest:qr5wd0g0ql3tzwyztdedlfe2x7xdtp520yvtvvwmxe),
+# 348 bytes, fee 1,500 sat, version 2, nSequence 3, no signature.
