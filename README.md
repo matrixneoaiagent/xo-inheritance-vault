@@ -43,7 +43,7 @@ hand the vault to someone else with `updateBeneficiary`.
 Template identifier (hash of the template content):
 
 ```
-6dce91458e1cc66d92dd2f09d439d2d1280358c357c4bbb9ae32831be0750f53
+bc4d0a967885754fb5e9add7e9cc204710d251b4263a1077edda7b20f1c6c79a
 ```
 
 `parseTemplate` + `generateTemplateIdentifier` and a live
