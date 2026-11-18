@@ -1,0 +1,27 @@
+{
+  "name": "D",
+  "templateIdentifier": "bc4d0a967885754fb5e9add7e9cc204710d251b4263a1077edda7b20f1c6c79a",
+  "label": "csv-probe",
+  "labelHex": "6373762d70726f6265",
+  "periodBlocks": 1,
+  "beneficiaryLockingScript": "76a914e8e6bd0f07e2b138825b72dfa72a378cd5868a7988ac",
+  "beneficiaryAddress": "bchtest:qr5wd0g0ql3tzwyztdedlfe2x7xdtp520yvtvvwmxe",
+  "vaultLockingBytecode": "aa20de0a8afa63e3b06d76e8e1d1428782709e37164e369c77888aa4aa8a8d33c22a87",
+  "vaultScriptHash": "00b212fd3053b3b46cc405785a6bb3397163f7e19b203413c292d115ccd4c8b7",
+  "vaultAddress": "bchtest:p00q4zh6v03mqmtkarsazs58sfcfudckfcmfcaug32j24z5dx0pz5eg3vvqgv",
+  "vaultSatoshis": "6000",
+  "outpointTransactionHash": "a8acc0b7d397d39c39662f7f6498301a3dd4ecbaecaa7e0ea87aa782be9c0d6d",
+  "outpointIndex": 0,
+  "status": "open",
+  "history": [
+    {
+      "action": "createVault",
+      "txid": "a8acc0b7d397d39c39662f7f6498301a3dd4ecbaecaa7e0ea87aa782be9c0d6d",
+      "at": "2026-11-18T19:56:19.821Z",
+      "note": "funded 6000 sats"
+    }
+  ],
+  "ownerPublicKey": "021649c19ea293661024ccbf9bec285cbffd8e166223127af5e21fa169371a5d9f",
+  "redeemScript": "096373762d70726f62657576519c637551b275c381519dc481519d00cd1976a914e8e6bd0f07e2b138825b72dfa72a378cd5868a7988ac8800cc81c0c68102dc05949c6776529c6375c381519dc481519d00cdc0c78800cc81c0c68102dc05949d21021649c19ea293661024ccbf9bec285cbffd8e166223127af5e21fa169371a5d9fac6776539c6375c381519dc481519d00cc81c0c68102dc05949d21021649c19ea293661024ccbf9bec285cbffd8e166223127af5e21fa169371a5d9fac67549dc381519dc481519d00cc81c0c68102dc05949d21021649c19ea293661024ccbf9bec285cbffd8e166223127af5e21fa169371a5d9fac686868",
+  "covenantBlockHeight": 337172
+}

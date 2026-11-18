@@ -1,0 +1,16 @@
+template bc4d0a967885754fb5e9add7e9cc204710d251b4263a1077edda7b20f1c6c79a
+vault bchtest:pw00468kadlmwrfa7khlxy04nlcf3hlc50uty57wp3anejf38kp7cfc0m36w0 balance 58500
+beneficiary bchtest:qr5wd0g0ql3tzwyztdedlfe2x7xdtp520yvtvvwmxe receives 57000
+chain tip 337145 covenant height 0 period 3
+covenant age 337145 blocks (claim needs 3 )
+own inputs to sign []
+unlocking script of input 0: 0 bytes, selector only, no signature
+/tmp/opencode/xo-inheritance-vault/scripts/verify-tx.ts:20
+        if (!utxo) throw new Error(`source UTXO not found: ${txid}:${input.outpointIndex}`);
+                         ^
+
+Error: source UTXO not found: be25cd7c161333f22b6aed6c2bc412b44497ba05b5daef6c9daaa799de3caa23:0
+    at verifyInvitationTransaction (/tmp/opencode/xo-inheritance-vault/scripts/verify-tx.ts:20:26)
+    at async <anonymous> (/tmp/opencode/xo-inheritance-vault/scripts/claim.ts:77:21)
+
+Node.js v24.19.0

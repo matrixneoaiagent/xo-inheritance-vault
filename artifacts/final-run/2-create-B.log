@@ -1,0 +1,120 @@
+Failed to synchronize block headers, will retry later: Error: Header '00000000000ecc7187034ddaa4327af300c23fd57bfd2557af6ca2392a022671' at height 332451 claims target 486604799, expected 437753688.
+    at validateBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/blockchain/headers.ts:65:9)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processImmediate (node:internal/timers:502:9)
+    at async processBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:468:29)
+    at async synchronizeBlockHeaders (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:989:60)
+Failed to process transaction update: Error: Could not validate a block header on height 337132: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337133: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336924: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336935: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336945: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337132: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337133: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336924: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336935: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336945: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337143: The requested header is ahead of the current checkpoint at height 332335
+template bc4d0a967885754fb5e9add7e9cc204710d251b4263a1077edda7b20f1c6c79a
+vault 40000 sats, period 100000 blocks, label "for-alice-2026-b"
+beneficiary bchtest:qr5wd0g0ql3tzwyztdedlfe2x7xdtp520yvtvvwmxe 76a914e8e6bd0f07e2b138825b72dfa72a378cd5868a7988ac
+Failed to process transaction update: Error: Could not validate a block header on height 337132: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337133: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337143: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336924: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336935: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336945: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337132: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337133: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337143: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336924: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336935: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336945: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337143: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337143: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337143: The requested header is ahead of the current checkpoint at height 332335
+funding ffa941216cd2cd884a51fb6b264f9e657e1ea9f9aa26c219b921efc0eb3d4c7e 1 725440
+fee 1500 change 683940
+VM_OK input 0 txid 98b5a2a8b1a9814786a8fad1d657d8a36899d4b0af2fc94ea7c27c3ca2696d5b size 229
+invitation /tmp/opencode/xo-inheritance-vault/artifacts/createVault-B-invitation.json
+preview txid 98b5a2a8b1a9814786a8fad1d657d8a36899d4b0af2fc94ea7c27c3ca2696d5b size 229
+VAULT_ADDRESS bchtest:pwhtscc3ard2dhwmsny8mjhcz750a2ph0c7c7u89cvy5wpz4nd9jz63r533ta
+VAULT_LOCKING_BYTECODE aa20aeb86311e8daa6dddb84c87dcaf817a8fea8377e3d8f70e5c3094704559b4b2187
+BROADCAST_TXID 98b5a2a8b1a9814786a8fad1d657d8a36899d4b0af2fc94ea7c27c3ca2696d5b
+covenant verified: engine bytecode == template compilation, redeem size 262
+record /tmp/opencode/xo-inheritance-vault/artifacts/vault-B.json (use VAULT_NAME=B for follow-ups)
+VAULT_TXID 98b5a2a8b1a9814786a8fad1d657d8a36899d4b0af2fc94ea7c27c3ca2696d5b
+Failed to process transaction update: Error: Could not validate a block header on height 337143: The requested header is ahead of the current checkpoint at height 332335
+/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/state/source/storages/indexeddb/index.ts:713
+            throw new DatabaseWriteOperationFailedError('unspentOutput', error);
+                  ^
+
+DatabaseWriteOperationFailedError: Database write operation failed for "unspentOutput"
+    at IndexedDBStorage.storeUnspentOutputData (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/state/source/storages/indexeddb/index.ts:713:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    ... 3 lines matching cause stack trace ...
+    at async EventEmitter.<anonymous> (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/network/blockchain.ts:49:13) {
+  entityName: 'unspentOutput',
+  originalError: DatabaseClosedError: Storage has been closed. Create a new instance to reopen the database.
+      at IndexedDBStorage.initialize (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/state/source/storages/indexeddb/index.ts:206:19)
+      at IndexedDBStorage.#getDatabase (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/state/source/storages/indexeddb/index.ts:1529:20)
+      at IndexedDBStorage.storeUnspentOutputData (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/state/source/storages/indexeddb/index.ts:697:41)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async storeBlockchainUnspentOutput (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/state/unspent-outputs.ts:79:9)
+      at async updateUnspentOutputsForScriptHash (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/state/unspent-outputs.ts:134:9)
+      at async BlockchainMonitor.onScriptHashUpdate (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/network/blockchain.ts:82:13)
+      at async EventEmitter.<anonymous> (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/network/blockchain.ts:49:13),
+  [cause]: DatabaseClosedError: Storage has been closed. Create a new instance to reopen the database.
+      at IndexedDBStorage.initialize (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/state/source/storages/indexeddb/index.ts:206:19)
+      at IndexedDBStorage.#getDatabase (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/state/source/storages/indexeddb/index.ts:1529:20)
+      at IndexedDBStorage.storeUnspentOutputData (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/state/source/storages/indexeddb/index.ts:697:41)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async storeBlockchainUnspentOutput (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/state/unspent-outputs.ts:79:9)
+      at async updateUnspentOutputsForScriptHash (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/state/unspent-outputs.ts:134:9)
+      at async BlockchainMonitor.onScriptHashUpdate (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/network/blockchain.ts:82:13)
+      at async EventEmitter.<anonymous> (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/network/blockchain.ts:49:13)
+}
+
+Node.js v24.19.0

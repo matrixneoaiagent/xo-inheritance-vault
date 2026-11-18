@@ -1,0 +1,112 @@
+Failed to synchronize block headers, will retry later: Error: Header '00000000000ecc7187034ddaa4327af300c23fd57bfd2557af6ca2392a022671' at height 332451 claims target 486604799, expected 437753688.
+    at validateBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/blockchain/headers.ts:65:9)
+    at async processBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:468:29)
+    at async synchronizeBlockHeaders (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:989:60)
+Failed to process transaction update: Error: Could not validate a block header on height 337133: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337143: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337132: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336924: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336935: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336945: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337144: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337144: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337133: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337143: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337132: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336924: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336935: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336945: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337144: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337143: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337144: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+template bc4d0a967885754fb5e9add7e9cc204710d251b4263a1077edda7b20f1c6c79a
+vault bchtest:pwhtscc3ard2dhwmsny8mjhcz750a2ph0c7c7u89cvy5wpz4nd9jz63r533ta balance 40000 -> next vault 38500
+next vault bchtest:pd50c70fv7x26jz6uy3vxqyzhtefgjd38qywdvdzryrtd4rj9ct2zepq02yxs period 4 label "for-bob-2026"
+chain tip 337156 covenant height unknown period 100000
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337133: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337143: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337132: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336924: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336935: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336945: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337144: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+VM_OK input 0 txid 225f71fcce5d9561858701bfe83dbe570cbee1db9d575f8ffdc5a3e627e5a79b size 429
+preview txid 225f71fcce5d9561858701bfe83dbe570cbee1db9d575f8ffdc5a3e627e5a79b size 429
+missing {"templateRequirements":{},"inputsMissingSignatures":[],"participants":[]}
+invitation /tmp/opencode/xo-inheritance-vault/artifacts/updateBeneficiary-B-invitation.json
+Failed to process transaction update: Error: Could not validate a block header on height 337144: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337133: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337143: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337132: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336924: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336935: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336945: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337144: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337143: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337144: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 336913: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 332336: The requested header is ahead of the current checkpoint at height 332335
+Failed to process transaction update: Error: Could not validate a block header on height 337144: The requested header is ahead of the current checkpoint at height 332335
+BROADCAST_TXID 225f71fcce5d9561858701bfe83dbe570cbee1db9d575f8ffdc5a3e627e5a79b
+NEXT_VAULT bchtest:pd50c70fv7x26jz6uy3vxqyzhtefgjd38qywdvdzryrtd4rj9ct2zepq02yxs balance 38500
+Failed to process transaction update: AggregateError: All promises were rejected
+Failed to process transaction update: AggregateError: All promises were rejected
+Failed to process transaction update: AggregateError: All promises were rejected
+Failed to process transaction update: AggregateError: All promises were rejected
+Failed to process transaction update: AggregateError: All promises were rejected
+Failed to process transaction update: AggregateError: All promises were rejected
+Failed to process transaction update: AggregateError: All promises were rejected
+Failed to process transaction update: Error: Could not validate a block header on height 337144: The requested header is ahead of the current checkpoint at height 332335
+/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/network/source/electrum-client.ts:570
+			requestResolver(new Error('Connection lost'));
+			                ^
+
+Error: Connection lost
+    at ElectrumClient.onConnectionDisconnect (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/network/source/electrum-client.ts:570:20)
+    at ElectrumConnection.emit (/tmp/opencode/xo-inheritance-vault/node_modules/eventemitter3/index.js:201:33)
+    at ElectrumConnection.onSocketDisconnect (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/network/source/electrum-connection.ts:650:9)
+    at ElectrumWebSocket.emit (/tmp/opencode/xo-inheritance-vault/node_modules/eventemitter3/index.js:180:35)
+    at WebSocket.onClose (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/web-socket/source/web.ts:600:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+
+Node.js v24.19.0

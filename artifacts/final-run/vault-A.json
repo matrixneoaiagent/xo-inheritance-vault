@@ -1,0 +1,39 @@
+{
+  "name": "A",
+  "templateIdentifier": "bc4d0a967885754fb5e9add7e9cc204710d251b4263a1077edda7b20f1c6c79a",
+  "label": "for-alice-2026",
+  "labelHex": "666f722d616c6963652d32303236",
+  "periodBlocks": 3,
+  "beneficiaryLockingScript": "76a914e8e6bd0f07e2b138825b72dfa72a378cd5868a7988ac",
+  "beneficiaryAddress": "bchtest:qr5wd0g0ql3tzwyztdedlfe2x7xdtp520yvtvvwmxe",
+  "vaultLockingBytecode": "aa209efae8f6eb7fb70d3df5aff311f59ff098dff8a3f8b253ce0c7b3cc9313d83ec87",
+  "vaultScriptHash": "8b0d2b5dc272a4b5f24fada0e07796e0fd5d6db8f516a7d99169f81bc3369701",
+  "vaultAddress": "bchtest:pw00468kadlmwrfa7khlxy04nlcf3hlc50uty57wp3anejf38kp7cfc0m36w0",
+  "vaultSatoshis": "58500",
+  "outpointTransactionHash": "be25cd7c161333f22b6aed6c2bc412b44497ba05b5daef6c9daaa799de3caa23",
+  "outpointIndex": 0,
+  "status": "claimed",
+  "history": [
+    {
+      "action": "createVault",
+      "txid": "ffa941216cd2cd884a51fb6b264f9e657e1ea9f9aa26c219b921efc0eb3d4c7e",
+      "at": "2026-11-18T19:27:11.291Z",
+      "note": "funded 60000 sats"
+    },
+    {
+      "action": "poke",
+      "txid": "be25cd7c161333f22b6aed6c2bc412b44497ba05b5daef6c9daaa799de3caa23",
+      "at": "2026-11-18T19:28:32.113Z",
+      "note": "balance 60000 -> 58500"
+    },
+    {
+      "action": "claim",
+      "txid": "bf9fa85020c9396405c75e781b481ab05eb8e2fe015a2ce604254a0d99899dc3",
+      "at": "2026-11-18T20:01:00.000Z",
+      "note": "beneficiary received 57000 sats with no signature. The identical transaction was rejected as non-BIP68-final from tip 337146 to 337173 (coin height 337144, period 3) and accepted unchanged at tip 337174."
+    }
+  ],
+  "ownerPublicKey": "03007af7121297ad7e05e4a5ec901ae939f22d13bd595a782896a5ec34961f4596",
+  "redeemScript": "0e666f722d616c6963652d323032367576519c637553b275c381519dc481519d00cd1976a914e8e6bd0f07e2b138825b72dfa72a378cd5868a7988ac8800cc81c0c68102dc05949c6776529c6375c381519dc481519d00cdc0c78800cc81c0c68102dc05949d2103007af7121297ad7e05e4a5ec901ae939f22d13bd595a782896a5ec34961f4596ac6776539c6375c381519dc481519d00cc81c0c68102dc05949d2103007af7121297ad7e05e4a5ec901ae939f22d13bd595a782896a5ec34961f4596ac67549dc381519dc481519d00cc81c0c68102dc05949d2103007af7121297ad7e05e4a5ec901ae939f22d13bd595a782896a5ec34961f4596ac686868",
+  "covenantBlockHeight": 0
+}

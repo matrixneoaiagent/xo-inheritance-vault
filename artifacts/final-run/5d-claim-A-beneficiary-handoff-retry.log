@@ -1,0 +1,30 @@
+joined invitation ccbc3f9c32505f2d27e02a13f5a590eb as beneficiary
+missing {"templateRequirements":{},"inputsMissingSignatures":[],"participants":[]}
+preview txid bf9fa85020c9396405c75e781b481ab05eb8e2fe015a2ce604254a0d99899dc3 size 348
+/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/invitation/participation/execute.ts:222
+            throw new TransactionBroadcastFailedError(invitation.invitationIdentifier, builtTransaction.transactionHash, String(broadcastIssue), {
+                  ^
+
+TransactionBroadcastFailedError: Transaction broadcast failed for transaction hash "bf9fa85020c9396405c75e781b481ab05eb8e2fe015a2ce604254a0d99899dc3" of invitation "ccbc3f9c32505f2d27e02a13f5a590eb": Error: Failed to broadcast transaction: Error: Failed to request 'blockchain.transaction.broadcast': the transaction was rejected by network rules.
+
+non-BIP68-final (code 64)
+
+    at executeAction (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/invitation/participation/execute.ts:222:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (/tmp/opencode/xo-inheritance-vault/scripts/broadcast-invitation.ts:37:24) {
+  invitationIdentifier: 'ccbc3f9c32505f2d27e02a13f5a590eb',
+  transactionHash: 'bf9fa85020c9396405c75e781b481ab05eb8e2fe015a2ce604254a0d99899dc3',
+  reason: "Error: Failed to broadcast transaction: Error: Failed to request 'blockchain.transaction.broadcast': the transaction was rejected by network rules.\n" +
+    '\n' +
+    'non-BIP68-final (code 64)\n',
+  [cause]: Error: Failed to broadcast transaction: Error: Failed to request 'blockchain.transaction.broadcast': the transaction was rejected by network rules.
+  
+  non-BIP68-final (code 64)
+  
+      at broadcastTransaction (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/transactions.ts:813:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async executeAction (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/invitation/participation/execute.ts:220:13)
+      at async <anonymous> (/tmp/opencode/xo-inheritance-vault/scripts/broadcast-invitation.ts:37:24)
+}
+
+Node.js v24.19.0

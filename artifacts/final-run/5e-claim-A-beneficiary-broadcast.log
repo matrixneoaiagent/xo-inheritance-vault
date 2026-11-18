@@ -1,0 +1,71 @@
+joined invitation ccbc3f9c32505f2d27e02a13f5a590eb as beneficiary
+missing {"templateRequirements":{},"inputsMissingSignatures":[],"participants":[]}
+preview txid bf9fa85020c9396405c75e781b481ab05eb8e2fe015a2ce604254a0d99899dc3 size 348
+attempt 1/10 rejected (cast': the transaction was rejected by network rules. non-BIP68-final (code 64) ); waiting 45s
+Failed to synchronize block headers, will retry later: Error: Header '00000000000ecc7187034ddaa4327af300c23fd57bfd2557af6ca2392a022671' at height 332451 claims target 486604799, expected 437753688.
+    at validateBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/blockchain/headers.ts:65:9)
+    at async processBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:468:29)
+    at async synchronizeBlockHeaders (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:989:60)
+Failed to synchronize block headers, will retry later: Error: Header '00000000000ecc7187034ddaa4327af300c23fd57bfd2557af6ca2392a022671' at height 332451 claims target 486604799, expected 437753688.
+    at validateBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/blockchain/headers.ts:65:9)
+    at async processBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:468:29)
+    at async synchronizeBlockHeaders (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:989:60)
+attempt 2/10 rejected (cast': the transaction was rejected by network rules. non-BIP68-final (code 64) ); waiting 45s
+attempt 3/10 rejected (cast': the transaction was rejected by network rules. non-BIP68-final (code 64) ); waiting 45s
+Failed to synchronize block headers, will retry later: Error: Header '00000000000ecc7187034ddaa4327af300c23fd57bfd2557af6ca2392a022671' at height 332451 claims target 486604799, expected 437753688.
+    at validateBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/blockchain/headers.ts:65:9)
+    at async processBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:468:29)
+    at async synchronizeBlockHeaders (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:989:60)
+attempt 4/10 rejected (cast': the transaction was rejected by network rules. non-BIP68-final (code 64) ); waiting 45s
+Failed to synchronize block headers, will retry later: Error: Header '00000000000ecc7187034ddaa4327af300c23fd57bfd2557af6ca2392a022671' at height 332451 claims target 486604799, expected 437753688.
+    at validateBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/blockchain/headers.ts:65:9)
+    at async processBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:468:29)
+    at async synchronizeBlockHeaders (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:989:60)
+attempt 5/10 rejected (cast': the transaction was rejected by network rules. non-BIP68-final (code 64) ); waiting 45s
+Failed to synchronize block headers, will retry later: Error: Header '00000000000ecc7187034ddaa4327af300c23fd57bfd2557af6ca2392a022671' at height 332451 claims target 486604799, expected 437753688.
+    at validateBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/blockchain/headers.ts:65:9)
+    at async processBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:468:29)
+    at async synchronizeBlockHeaders (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:989:60)
+attempt 6/10 rejected (cast': the transaction was rejected by network rules. non-BIP68-final (code 64) ); waiting 45s
+attempt 7/10 rejected (cast': the transaction was rejected by network rules. non-BIP68-final (code 64) ); waiting 45s
+Failed to synchronize block headers, will retry later: Error: Header '00000000000ecc7187034ddaa4327af300c23fd57bfd2557af6ca2392a022671' at height 332451 claims target 486604799, expected 437753688.
+    at validateBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/blockchain/headers.ts:65:9)
+    at async processBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:468:29)
+    at async synchronizeBlockHeaders (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:989:60)
+attempt 8/10 rejected (cast': the transaction was rejected by network rules. non-BIP68-final (code 64) ); waiting 45s
+Failed to synchronize block headers, will retry later: Error: Header '00000000000ecc7187034ddaa4327af300c23fd57bfd2557af6ca2392a022671' at height 332451 claims target 486604799, expected 437753688.
+    at validateBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/blockchain/headers.ts:65:9)
+    at async processBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:468:29)
+    at async synchronizeBlockHeaders (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:989:60)
+attempt 9/10 rejected (cast': the transaction was rejected by network rules. non-BIP68-final (code 64) ); waiting 45s
+Failed to synchronize block headers, will retry later: Error: Header '00000000000ecc7187034ddaa4327af300c23fd57bfd2557af6ca2392a022671' at height 332451 claims target 486604799, expected 437753688.
+    at validateBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/blockchain/headers.ts:65:9)
+    at async processBlockHeader (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:468:29)
+    at async synchronizeBlockHeaders (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/application.ts:989:60)
+/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/invitation/participation/execute.ts:222
+            throw new TransactionBroadcastFailedError(invitation.invitationIdentifier, builtTransaction.transactionHash, String(broadcastIssue), {
+                  ^
+
+TransactionBroadcastFailedError: Transaction broadcast failed for transaction hash "bf9fa85020c9396405c75e781b481ab05eb8e2fe015a2ce604254a0d99899dc3" of invitation "ccbc3f9c32505f2d27e02a13f5a590eb": Error: Failed to broadcast transaction: Error: Failed to request 'blockchain.transaction.broadcast': the transaction was rejected by network rules.
+
+non-BIP68-final (code 64)
+
+    at executeAction (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/invitation/participation/execute.ts:222:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async <anonymous> (/tmp/opencode/xo-inheritance-vault/scripts/broadcast-invitation.ts:41:32) {
+  invitationIdentifier: 'ccbc3f9c32505f2d27e02a13f5a590eb',
+  transactionHash: 'bf9fa85020c9396405c75e781b481ab05eb8e2fe015a2ce604254a0d99899dc3',
+  reason: "Error: Failed to broadcast transaction: Error: Failed to request 'blockchain.transaction.broadcast': the transaction was rejected by network rules.\n" +
+    '\n' +
+    'non-BIP68-final (code 64)\n',
+  [cause]: Error: Failed to broadcast transaction: Error: Failed to request 'blockchain.transaction.broadcast': the transaction was rejected by network rules.
+  
+  non-BIP68-final (code 64)
+  
+      at broadcastTransaction (/tmp/opencode/xo-inheritance-vault/node_modules/@electrum-cash/application/source/transactions.ts:813:9)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async executeAction (/tmp/opencode/xo-inheritance-vault/node_modules/@xo-cash/engine/source/invitation/participation/execute.ts:220:13)
+      at async <anonymous> (/tmp/opencode/xo-inheritance-vault/scripts/broadcast-invitation.ts:41:32)
+}
+
+Node.js v24.19.0

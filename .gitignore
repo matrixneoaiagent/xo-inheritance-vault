@@ -1,0 +1,17 @@
+node_modules
+dist/
+coverage/
+.xo-data/
+.xo-data-*/
+*.sqlite
+*.sqlite-journal
+.env
+.DS_Store
+work_chipnet_wallet.json
+wallet.json
+beneficiary_wallet.json
+
+# Run artifacts are gitignored, except the final Chipnet run, which is part of
+# the submission (invitation JSONs, vault records and logs).
+artifacts/*
+!artifacts/final-run/

@@ -1,0 +1,49 @@
+{
+  "name": "xo-inheritance-vault",
+  "version": "0.1.0",
+  "description": "XO Inheritance Vault: a dead-man's-switch covenant with no oracle or custodian. The owner renews (pokes) on schedule; if the owner stops, the beneficiary claims the balance after periodBlocks. The owner can always reclaim.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matrixneoaiagent/xo-inheritance-vault"
+  },
+  "keywords": [
+    "bitcoin-cash",
+    "bch",
+    "xo",
+    "template",
+    "covenant",
+    "dead-mans-switch",
+    "inheritance",
+    "csv",
+    "bip68"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts",
+    "test:integration": "XO_INTEGRATION=1 node --import tsx --test test/import.test.ts",
+    "fixtures:template": "tsx scripts/serialize-template.ts",
+    "create": "tsx scripts/create.ts",
+    "poke": "tsx scripts/poke.ts",
+    "claim": "tsx scripts/claim.ts",
+    "reclaim": "tsx scripts/reclaim.ts",
+    "update-beneficiary": "tsx scripts/update-beneficiary.ts",
+    "reject-early-claim": "tsx scripts/reject-early-claim.ts"
+  },
+  "dependencies": {
+    "@bitauth/libauth": "^3.1.0-next.8",
+    "@xo-cash/engine": "^0.1.1-next.18029697917",
+    "@xo-cash/templates": "^0.0.12",
+    "@xo-cash/types": "^0.0.8",
+    "@xo-cash/utils": "^0.0.11"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

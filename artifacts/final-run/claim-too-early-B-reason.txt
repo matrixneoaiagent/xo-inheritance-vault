@@ -1,0 +1,5 @@
+nSequence 99999 (below the committed period): Program called an OP_CHECKSEQUENCEVERIFY operation that requires a sequence number greater than the input's sequence number. Sequence number: 99999; required sequence number: 100000.
+nSequence 100000 before the coin aged: Transaction broadcast failed for transaction hash "0ed670420af74de46fb294cc847ca08ce407f3063cd1eb94f86b9ec4d83f39bb" of invitation "12869c8820caa620a02f3840945efe43": Error: Failed to broadcast transaction: Error: Failed to request 'blockchain.transaction.broadcast': the transaction was rejected by network rules.
+
+non-BIP68-final (code 64)
+

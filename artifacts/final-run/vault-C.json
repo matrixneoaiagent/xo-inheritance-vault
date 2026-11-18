@@ -1,0 +1,32 @@
+{
+  "name": "C",
+  "templateIdentifier": "bc4d0a967885754fb5e9add7e9cc204710d251b4263a1077edda7b20f1c6c79a",
+  "label": "cancel-demo",
+  "labelHex": "63616e63656c2d64656d6f",
+  "periodBlocks": 100000,
+  "beneficiaryLockingScript": "76a914e8e6bd0f07e2b138825b72dfa72a378cd5868a7988ac",
+  "beneficiaryAddress": "bchtest:qr5wd0g0ql3tzwyztdedlfe2x7xdtp520yvtvvwmxe",
+  "vaultLockingBytecode": "aa20bb997b73a85f96f44d9c0c3bb8ae06a563068e334818e0433b4ae50bca2d74ae87",
+  "vaultScriptHash": "be536b6770e2683f22dd992fd262d64d9163e99b215a7557790204feb785262c",
+  "vaultAddress": "bchtest:pwaej7mn4p0edazdnsxrhw9wq6jkxp5wxdyp3czr8d9w2z729462uw45mej57",
+  "vaultSatoshis": "30000",
+  "outpointTransactionHash": "9e8fec4924ae09e7650ea705233a02a7ae3b4e7b4e394d094095a7cb4591f0d6",
+  "outpointIndex": 0,
+  "status": "reclaimed",
+  "history": [
+    {
+      "action": "createVault",
+      "txid": "9e8fec4924ae09e7650ea705233a02a7ae3b4e7b4e394d094095a7cb4591f0d6",
+      "at": "2026-11-18T19:47:53.902Z",
+      "note": "funded 30000 sats"
+    },
+    {
+      "action": "reclaim",
+      "txid": "9e144216c8a2f21f7511f5a7eb4d44b7cf8c37c845cd0d15ab39d5004da6ea7b",
+      "at": "2026-11-18T19:48:01.676Z",
+      "note": "owner received 28500 sats"
+    }
+  ],
+  "ownerPublicKey": "02248ba8f4308d7680925802b26ccaa911d5b8c213ed4b8ffbf67c24146be136d0",
+  "redeemScript": "0b63616e63656c2d64656d6f7576519c637503a08601b275c381519dc481519d00cd1976a914e8e6bd0f07e2b138825b72dfa72a378cd5868a7988ac8800cc81c0c68102dc05949c6776529c6375c381519dc481519d00cdc0c78800cc81c0c68102dc05949d2102248ba8f4308d7680925802b26ccaa911d5b8c213ed4b8ffbf67c24146be136d0ac6776539c6375c381519dc481519d00cc81c0c68102dc05949d2102248ba8f4308d7680925802b26ccaa911d5b8c213ed4b8ffbf67c24146be136d0ac67549dc381519dc481519d00cc81c0c68102dc05949d2102248ba8f4308d7680925802b26ccaa911d5b8c213ed4b8ffbf67c24146be136d0ac686868"
+}

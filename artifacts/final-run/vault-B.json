@@ -1,0 +1,32 @@
+{
+  "name": "B",
+  "templateIdentifier": "bc4d0a967885754fb5e9add7e9cc204710d251b4263a1077edda7b20f1c6c79a",
+  "label": "for-bob-2026",
+  "labelHex": "666f722d626f622d32303236",
+  "periodBlocks": 4,
+  "beneficiaryLockingScript": "76a914819295b3a8f18ad46789de0c8b05a40c6e1796e688ac",
+  "beneficiaryAddress": "bchtest:qzqe99dn4rcc44r8380qezc95sxxu9ukucmlefl8x9",
+  "vaultLockingBytecode": "aa2068fc79e9678cad485ae122c30082baf29449b13808e6b1a21906b6d4722e16a187",
+  "vaultScriptHash": "a096dbb2eb8477c78d4d7d808af77b49c5fd5308aeee5ff3754e2df280ffb073",
+  "vaultAddress": "bchtest:pd50c70fv7x26jz6uy3vxqyzhtefgjd38qywdvdzryrtd4rj9ct2zepq02yxs",
+  "vaultSatoshis": "38500",
+  "outpointTransactionHash": "225f71fcce5d9561858701bfe83dbe570cbee1db9d575f8ffdc5a3e627e5a79b",
+  "outpointIndex": 0,
+  "status": "open",
+  "history": [
+    {
+      "action": "createVault",
+      "txid": "98b5a2a8b1a9814786a8fad1d657d8a36899d4b0af2fc94ea7c27c3ca2696d5b",
+      "at": "2026-11-18T19:27:23.052Z",
+      "note": "funded 40000 sats"
+    },
+    {
+      "action": "updateBeneficiary",
+      "txid": "225f71fcce5d9561858701bfe83dbe570cbee1db9d575f8ffdc5a3e627e5a79b",
+      "at": "2026-11-18T19:44:07.020Z",
+      "note": "bchtest:pwhtscc3ard2dhwmsny8mjhcz750a2ph0c7c7u89cvy5wpz4nd9jz63r533ta -> bchtest:pd50c70fv7x26jz6uy3vxqyzhtefgjd38qywdvdzryrtd4rj9ct2zepq02yxs"
+    }
+  ],
+  "ownerPublicKey": "02385f0743742b6bd114f19a2ce9ce0f18827caf40e9f77c636a57d72cd61f44e3",
+  "redeemScript": "0c666f722d626f622d323032367576519c637554b275c381519dc481519d00cd1976a914819295b3a8f18ad46789de0c8b05a40c6e1796e688ac8800cc81c0c68102dc05949c6776529c6375c381519dc481519d00cdc0c78800cc81c0c68102dc05949d2102385f0743742b6bd114f19a2ce9ce0f18827caf40e9f77c636a57d72cd61f44e3ac6776539c6375c381519dc481519d00cc81c0c68102dc05949d2102385f0743742b6bd114f19a2ce9ce0f18827caf40e9f77c636a57d72cd61f44e3ac67549dc381519dc481519d00cc81c0c68102dc05949d2102385f0743742b6bd114f19a2ce9ce0f18827caf40e9f77c636a57d72cd61f44e3ac686868"
+}
