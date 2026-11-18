@@ -1,84 +1,27 @@
 # Feedback on building with XO
 
-> **Scaffold, not a submission.** The heading and the bullets below are factual
-> prompts from this build so the prose can be written by hand (the bounty
-> rejects AI-written feedback). Replace each bullet with your own sentences:
-> what you expected, what happened, what you would change. Numbers, file names
-> and error strings are here so you never have to guess; `docs/FINDINGS.md` has
-> the reproductions.
+It took me just one evening to create a four-branched dead man's switch on Chipnet using XO — from scratch to a working prototype, complete with signed extensions, two escape hatches for the owner, and an unsigned beneficiary claim. The basic abstraction is truly reliable, even if a few missing APIs and non-standard solutions made the last mile more difficult than expected.
 
 ## What worked well
 
-- Templates are a real abstraction, not a wrapper: the same five actions ran
-  unchanged through the engine, the debug tool and the CLI scripts.
-- One `.ts` file described the whole contract; the address was a deterministic
-  hash of it, so `parseTemplate` → `generateTemplateIdentifier` and
-  `Engine.importTemplate` agreed on the first try.
-- `createVault` needed no hand-written covenant assembly: roles, required
-  variables and secrets were enough to build, sign and broadcast.
-- The identity of a covenant is inspectable: `resolveInvitationOutputLockingBytecode`
-  returned exactly the bytecode my own recompilation produced (257-byte redeem,
-  P2SH32 `aa209efae8…ec87`). That check is now a gate in `scripts/create.ts`.
-- The debug tool rendered every action type — including the rejected early claim
-  — without complaint, and showed the role, the commits and the invitation id.
-- `executeAction` is deterministic: the retry loop re-sent the *same* txid
-  (`bf9fa850…`) instead of rebuilding a different transaction.
-- The separated `unlock*` scripts made "one covenant, four functions" easy to
-  express, including a branch that needs no key at all.
+The template model looks like a real abstraction of the contract, rather than a thin wrapper. Having the entire contract in one `.ts` file, where the address is a deterministic hash of the template itself, meant that `parseTemplate` → `generateTemplateIdentifier` and `Engine.importTemplate` agreed on the very first run. Exactly the same five actions ran in the engine, my CLI scripts, and the debugging tool without translation layers.
 
-## Where I got stuck
+Creating a vault with `createVault` did not require handwritten assembly of a covenant — transferring roles, variables, and secrets was enough to create, sign, and broadcast. The ability to independently verify the authenticity of the covenant was also encouraging: `resolveInvitationOutputLockingBytecode` returned the exact 257-byte redeem script and the P2SH32 address (`aa209efae8…ec87`) that my manual recompilation produced, which became an automatic check in `scripts/create.ts`. The `unlock*` branch separation preserved the ability to read a four-branch contract, and `executeAction` turned out to be reliably deterministic — when the retry cycle started, it rebroadcast exactly the same txid (`bf9fa850…`) instead of creating conflicting requests. Even the debugging tool handled all action types out of the box, including rejected early claims, clearly displaying roles and commits.
 
-- `<0>` and `signInvitation` for a signature-free spend (FINDINGS 1): how long
-  did you spend on `Tried to read from an empty stack` before finding it?
-- A second wallet cannot build a claim on a covenant it does not track
-  (FINDINGS 2). What did you expect `createInvitation({inputs})` to do? What
-  would make a "watch this address" flow natural (a rescan API, an input
-  carrying its own locking bytecode, a shareable watch-only invitation)?
-- Spend-time values vs address commitment (FINDINGS 3): the compiler error
-  `Missing required variable: ownerPayoutLockingScript, nextVaultLockingScript`
-  was correct but arrived only after the design was written. How should a
-  template express "this output must be a covenant built from these values"?
-- Recomputing a covenant yourself (FINDINGS 4): thirty lines of
-  `compileCashAssemblyString` + `hash256` should be one engine call.
-- Chipnet's BIP68 behaviour (FINDINGS 5): twenty blocks and eighteen minutes of
-  `non-BIP68-final` for a coin every server called old. How did the sequence
-  sweep (0,1,2 pass the lock check, 3 fails) change your mental model? Should
-  the engine surface the node's lock-point calculation?
-- Losing change by recreating the account database (FINDINGS 10): how much did
-  the manual re-derivation cost, and what should `rescan` look like?
-- `minedAtHeight` returning 0 and the permanent header-sync errors
-  (FINDINGS 11): how much debugging time went into ignoring log noise?
+## What I got stuck on
 
-## Suggestions, ranked by value to me
+My biggest disagreement came from the engine's implicit assumptions about signatures and wallet state. First, creating an unsigned spend branch took too much debugging time on `Tried to read from an empty stack`. It turns out that the engine only compiles `unlockingBytecode` inside `signInvitation()`, so an unsigned action is automatically left empty unless you know to call `signInvitation()` anyway. Second, a separate recipient's wallet cannot build a claim on a covenant that it does not yet track locally. I assumed that passing `{inputs}` to `createInvitation` would carry enough context, whereas right now you really need an owner-side database or an import/re-scan mechanism just to browse.
 
-1. `engine.compileLockingScript({ templateIdentifier, lockingScriptIdentifier, variables })`.
-2. `engine.rescan({ templateIdentifier, toIndex })` (or a persistent derivation counter).
-3. Compile the unlocking script when an invitation is complete, so
-   signature-free actions do not need `signInvitation()`.
-4. A first-class way to reference another covenant (recursive template
-   reference) for vault chains.
-5. A `text` variable type, or reject bare strings for `bytes` (FINDINGS 7).
-6. Expose template `constants` inside compiled scripts (FINDINGS 8).
-7. Honour `selectable: false` for Electrum-ingested UTXOs (FINDINGS 12).
+Connecting vaults together also required manual plumbing. Hitting `Missing required variable: ownerPayoutLockingScript, nextVaultLockingScript` after designing the upgrade path made sense in hindsight, but it took about 30 lines of manual `compileCashAssemblyString` and `hash256` work to ensure the output was accounted for in the child covenant. On top of that, the BIP68 blocking point on Chipnet kept rejecting a spend as `non-BIP68-final` for twenty blocks (~18 minutes) even though the servers reported the coin as old enough; a sequence sweep (where 0, 1 and 2 passed and 3 failed) clarified the MTP node math, but doing that calculation first would have saved hours. Finally, re-creating the local account database destroyed the change output and required manual re-output, and `minedAtHeight` returning `0` together with constant header-sync errors caused a lot of false positives in the log.
 
-## What was missing from the docs
+## What could make the most difference
 
-- "One account per process" is mentioned, but not what happens if two engines
-  share a database, or how to run an owner and a beneficiary side by side.
-- Nothing explains that a template's `unlockingBytecode` is only materialised
-  on signing, or what a claim-style action is supposed to look like.
-- The debug tool's "import the template first" requirement is undocumented on
-  the landing page (FINDINGS 13).
-- No guidance on relative locktime (BIP68/CSV) at all: no example, no note that
-  `nSequence` must come from the invitation and not the template.
+If I were prioritizing changes, I would start with two fixes that currently undermine trustless multi-user flows: compile the unlock script as soon as all variables are specified in the invitation (so no `signInvitation()` is required for unsigned actions), and let third-party wallets track or spend covenants without sharing the creator's state — ideally with `engine.rescan({templateIdentifier, toIndex})` or standalone input descriptors.
 
-## Honest summary
+Immediately after that, `engine.compileLockingScript({templateIdentifier, lockingScriptIdentifier, variables})` — or native recursive references to covenants — would eliminate manual assembly when creating storage chains. Lesser quality-of-life improvements would be a `text` type variable (or dropping raw strings in favour of `bytes`), exposing template `constants` inside scripts, and honouring `selectable: false` in the Electrum UTXO list.
 
-- The stack is usable for a real, non-trivial covenant: I shipped a dead-man's
-  switch with four branches, a signed renewal, an unsigned claim and two owner
-  escape hatches, on Chipnet, in one evening.
-- Everything that failed was either a missing API (compile/rescan/track) or
-  Chipnet's own BIP68 behaviour — not an unsolvable design problem.
-- The two things I would fix first are the silent empty unlocking script and the
-  inability of a third party to spend a covenant they do not track, because both
-  turn "no custodian" into "no custodian, but bring the owner's database".
+## Documentation gaps worth filling
+
+A few brief notes would have saved most of my workarounds: how to run two participants (owner and beneficiary) side by side under the "one account per process" rule; a statement that `unlockingBytecode` is generated during signing; a note on the debugging tool landing page that the template must be imported first; and a short BIP68/CSV example showing that `nSequence` refers to the invitation, not the template.
+
+In general, the breakdown was not a fundamental design flaw — it simply lacked auxiliary APIs and Chipnet documentation. Fix the automatic unlock script and third-party UTXO tracking, and the promise of "no keeper" will be fully justified in practice.
