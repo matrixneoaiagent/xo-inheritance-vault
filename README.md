@@ -44,7 +44,7 @@ beneficiary 57,000 sats with **no signature**. Right: the owner poke in block
 337,144 — the balance returns to the identical script and the BIP68 age
 restarts.*
 
-All eight transactions, including the early claim that Chipnet rejected with
+All seven transactions, plus the early claim that Chipnet rejected with
 `non-BIP68-final`, are listed under [Chipnet run](#chipnet-run); the raw logs and
 the retry loop are in [`artifacts/final-run/`](artifacts/final-run/).
 
