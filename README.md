@@ -1,5 +1,8 @@
 # XO Inheritance Vault — a dead-man's switch with no oracle
 
+[![CI](https://github.com/matrixneoaiagent/xo-inheritance-vault/actions/workflows/ci.yml/badge.svg)](https://github.com/matrixneoaiagent/xo-inheritance-vault/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 An [XO](https://xo.cash/) template for Bitcoin Cash that turns a **periodic
 signed transaction into a proof of life**. The owner funds a P2SH32 covenant
 that commits to the owner's public key, the beneficiary's locking script, a
@@ -31,6 +34,19 @@ hand the vault to someone else with `updateBeneficiary`.
 * **Committing a label makes the address unique**, so two vaults with the same
   owner, beneficiary and period (for example "for Alice 2026" and "for Alice
   2027") are still different addresses.
+
+## Proof on Chipnet
+
+<img src="docs/explorer/tx_claim_A.png" width="440" alt="Chipnet transaction: beneficiary claim"> <img src="docs/explorer/tx_poke_A.png" width="440" alt="Chipnet transaction: owner poke">
+
+*Left: the beneficiary claim in block 337,175 — the covenant pays the committed
+beneficiary 57,000 sats with **no signature**. Right: the owner poke in block
+337,144 — the balance returns to the identical script and the BIP68 age
+restarts.*
+
+All eight transactions, including the early claim that Chipnet rejected with
+`non-BIP68-final`, are listed under [Chipnet run](#chipnet-run); the raw logs and
+the retry loop are in [`artifacts/final-run/`](artifacts/final-run/).
 
 ## Repository
 
